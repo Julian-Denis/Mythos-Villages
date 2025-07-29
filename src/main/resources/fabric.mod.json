@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mythos-villages",
+	"version": "${version}",
+	"name": "Mythos: Villages",
+	"description": "Mythos: Villages revamped villages with dynamic layouts, interconnection between them, threat reactions, and environment-driven NPC quests, bringing depth and coherence to Minecraft's village system",
+	"authors": [
+		"WypSteur"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/mythos-villages/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.wypsteur.mythosvillages.MythosVillages"
+		],
+		"fabric-datagen": [
+			"net.wypsteur.mythosvillages.MythosVillagesDataGenerator"
+		],
+		"client": [
+			"net.wypsteur.mythosvillages.MythosVillagesClient"
+		]
+	},
+	"mixins": [
+		"mythos-villages.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
